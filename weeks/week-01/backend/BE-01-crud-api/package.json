@@ -1,0 +1,14 @@
+{
+  "name": "be-01-crud-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node start.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "swagger-ui-express": "^5.0.1"
+  }
+}

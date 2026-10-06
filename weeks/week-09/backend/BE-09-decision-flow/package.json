@@ -1,0 +1,26 @@
+{
+  "name": "flyrank-be-09-decision-flow",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "start": "node server.js",
+    "test": "node --test",
+    "inngest": "npx inngest-cli@latest dev -u http://localhost:3000/api/inngest"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.8.5",
+    "express": "^5.1.0",
+    "inngest": "^3.49.3",
+    "openai": "^6.10.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "shadcn": "^3.6.2",
+    "vite": "^7.1.9"
+  }
+}

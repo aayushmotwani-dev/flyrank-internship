@@ -1,0 +1,23 @@
+# Dependencies and generated output
+**/node_modules/
+**/.next/
+**/dist/
+**/build/
+**/coverage/
+**/.cache/
+
+# Local databases and generated reports
+**/*.db
+**/*.sqlite
+**/data/
+**/reports/
+
+# Local environment files and secrets
+**/.env
+**/.env.*
+!**/.env.example
+
+# Logs and operating-system files
+**/*.log
+.DS_Store
+Thumbs.db

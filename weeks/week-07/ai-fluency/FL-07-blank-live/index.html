@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aayush Motwani — Backend engineering</title>
+    <meta name="description" content="Aayush Motwani's backend engineering portfolio: tested APIs, background jobs, and practical capstone work.">
+    <meta property="og:title" content="Aayush Motwani — Backend engineering">
+    <meta property="og:description" content="Tested backend systems, practical APIs, and a small capstone evidence hub.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aayushmotwani-dev.github.io/flyrank-fl-07-blank-live/">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <style>
+      :root { color: #17212B; background: #F7F8FA; font: 16px/1.6 Inter, system-ui, sans-serif; }
+      body { margin: 0; display: grid; min-height: 100vh; place-items: center; }
+      main { width: min(42rem, calc(100% - 3rem)); }
+      h1 { font: 600 clamp(2rem, 7vw, 4rem)/1.05 "Space Grotesk", system-ui, sans-serif; margin: 0 0 1rem; }
+      p { max-width: 34rem; }
+      a { color: #2F6FED; }
+      button { border: 1px solid #17212B; background: transparent; color: #17212B; border-radius: .4rem; padding: .65rem .8rem; font: inherit; cursor: pointer; }
+      pre { max-width: 42rem; white-space: pre-wrap; background: #fff; border-left: 3px solid #D97706; padding: 1rem; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>Backend engineering intern</p>
+      <h1>Aayush Motwani</h1>
+      <p>I build small backend systems that turn clear requirements into tested, documented APIs.</p>
+      <p><button id="demo-button" type="button">Show one capstone flow</button></p>
+      <pre id="demo-output" hidden aria-live="polite"></pre>
+      <p><a href="https://github.com/aayushmotwani-dev">GitHub profile</a></p>
+      <footer><small>Graduate badge: pending FlyRank credential issuance.</small></footer>
+    </main>
+    <script>
+      const button = document.querySelector('#demo-button');
+      const output = document.querySelector('#demo-output');
+      button.addEventListener('click', () => {
+        const isOpen = !output.hidden;
+        output.hidden = isOpen;
+        if (!isOpen) output.textContent = 'POST /api/projects/1/reports\\n→ 202 Accepted { jobId: "job-42" }\\n\\nGET /api/jobs/job-42\\n→ completed { report: "evidence-summary.pdf" }';
+        button.textContent = isOpen ? 'Show one capstone flow' : 'Hide capstone flow';
+        button.setAttribute('aria-expanded', String(!isOpen));
+      });
+    </script>
+  </body>
+</html>
